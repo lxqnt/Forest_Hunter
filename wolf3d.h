@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// NOTE: initial project was titled wolf3d in recognition of the game it was based on. Name was then changed to forest hunter. 
+
 #ifndef WOLF3D_H
 # define WOLF3D_H
 

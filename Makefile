@@ -53,7 +53,7 @@ $(PROGRAM): $(OBJ) $(MAIN) $(HEADER)
 	@$(MAKE) -C ./libft 
 	@echo "$(YELLOW)>>CREATING $(PROGRAM)...$(NO_COLOR)"
 	$(CC) $(MAIN) $(OBJ) -L libft -lft $(CFLAGS) $(GFLAGS) -o $(PROGRAM)
-	@echo "$(GREEN)>>DONE!"
+	@echo "$(GREEN)>>DONE!$(NO_COLOR)"
 
 testclean:
 	@rm -f $(OBJ)
@@ -62,13 +62,14 @@ clean:
 	@echo "$(RED)>>DELETING OBJECT FILES..."
 	$(MAKE) clean -C ./libft
 	@rm -f $(OBJ)
-	@echo "$(GREEN)>>DONE!"
+	@echo "$(GREEN)>>DONE!$(NO_COLOR)"
 
 fclean: clean
 	@$(MAKE) fclean -C ./libft
 	@echo "$(RED)>>DELETING $(PROGRAM)"
 	@rm -f $(PROGRAM)
-	@echo "$(GREEN)>>DONE!"
+	@echo "$(GREEN)>>DONE!$(NO_COLOR)"
+
 
 test: testclean all
 

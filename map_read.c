@@ -57,7 +57,7 @@ int				run_error(int err, t_win *wolf)
 	i = 0;
 	if (err == 1)
 	{
-		ft_putstr("usage: ./wolf3d [ -level map file . .]\n");
+		ft_putstr("usage: ./foresthunter [level map file . .][...][...]\n");
 		ft_putstr("error: only 1 - 3 level maps accepted\n");
 		return (0);
 	}
